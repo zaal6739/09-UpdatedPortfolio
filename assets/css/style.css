@@ -1,0 +1,152 @@
+
+/* BOX SIZING  */
+* {
+  box-sizing: border-box;
+}
+/* Keep border and padding inside the box measurement */
+
+/*** Texts ***/
+@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+p {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    text-transform: uppercase;
+    /* font-family: 'Roboto Slab', serif; */
+    font-weight: 700;
+}
+
+/*** 4.0 GENERAL PAGE CONSTRUCTION ***/
+body {
+    overflow-x: hidden;
+}
+
+/* 4.1 HEADER */
+header {
+    text-align: center;
+    color: #FFF;
+    background: url(../images/arctic.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 30%;
+}
+
+header .intro-text .name {
+    display: block;
+    text-transform: uppercase;
+    font-family: 'Roboto Slab', serif;
+    font-size: 2em;
+    font-weight: 700;
+}
+
+header .intro-text .skills {
+    font-size: 1.25em;
+    font-weight: 300;
+    font-family: Open Sans, sans-serif;
+    font-style: light;
+}
+
+@media(min-width:950px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 186px;
+    }
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+
+@media(min-width:768px) {
+    header .container {
+        padding-top: 200px;
+        padding-bottom: 186px;
+    }
+    header .intro-text .name {
+        font-size: 4.75em;
+    }
+    header .intro-text .skills {
+        font-size: 1.75em;
+    }
+}
+/* 4.2 PORTFOLIO */
+@media (min-width:600px ){
+.sm-title {
+    text-align: center;
+    position: relative;
+    top: 26px;
+    padding-bottom: 25px;
+    padding-left: 12px;
+    padding-right: 12px;
+    }
+}
+/* Description Body */
+section {
+      padding-top: 55px;
+      padding-left: 55px;
+      padding-right: 55px;
+      padding-bottom: 50px;
+}
+
+section#about {
+    text-align: center;
+    color: white;
+    background: url(../images/blue.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#portfolioheader {
+margin-bottom:10px;
+}
+
+@media(max-width:767px) {
+    section {
+        padding: 75px 0;
+    }
+
+    section.first {
+        padding-top: 75px;
+    }
+}
+/* 4.4 HIRE-JOB */
+.hire-job {
+    background-color: ghostwhite;
+    padding: 60px;
+    margin-bottom: 5px;
+}
+
+.socialBtn {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#socialheader {
+margin-bottom: 5px;
+}
+
+/*** 5.0 LINKS & BUTTONS ***/
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    opacity: 0.5;
+}
