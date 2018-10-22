@@ -6,7 +6,7 @@
 /* Keep border and padding inside the box measurement */
 
 /*** Texts ***/
-@import url('https://fonts.googleapis.com/css?family=Poppins:300');
+/* @import url('https://fonts.googleapis.com/css?family=Poppins:300'); */
 p {
     font-size: 20px;
     font-weight: 300;
@@ -18,7 +18,7 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: 700;
 }
 
-/*** 4.0 GENERAL PAGE CONSTRUCTION ***/
+
 body {
     overflow-x: hidden;
 }
@@ -43,7 +43,7 @@ header img {
 header .intro-text .name {
     display: block;
     text-transform: uppercase;
-    font-family: 'Roboto Slab', serif;
+    /* font-family: 'Roboto Slab', serif; */
     font-size: 2em;
     font-weight: 700;
 }
@@ -122,8 +122,9 @@ margin-bottom:10px;
         padding-top: 75px;
     }
 }
-/* 4.4 HIRE-JOB */
-.hire-job {
+
+
+.contact {
     background-color: ghostwhite;
     padding: 60px;
     margin-bottom: 5px;
@@ -134,11 +135,11 @@ margin-bottom:10px;
   padding-right: 10px;
 }
 
-#socialheader {
+/* #socialheader {
 margin-bottom: 5px;
-}
+} */
 
-/*** 5.0 LINKS & BUTTONS ***/
+/*** LINKS & BUTTONS ***/
 a,
 a:hover,
 a:focus,
@@ -149,4 +150,73 @@ a.active {
 
 a:hover, a:active {
     opacity: 0.5;
+}
+
+
+/** portfolio list **/
+#portfolio {
+	display: block;
+	width: 100%;
+	padding: 45px 12px 0;
+	margin-bottom: 35px;
+	text-align: center;
+	background-color: #FFF; 
+}
+
+#portfolio .item {
+	display: none;
+	opacity: 0;
+	width: 30%;
+	vertical-align: top;
+	margin-bottom: 25px;
+	margin-right: 20px;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	width: 207px;
+	-moz-box-sizing: border-box;
+}
+#portfolio .item1 {
+	display: none;
+	opacity: 0;
+	vertical-align: top;
+	margin-bottom: 25px;
+	margin-right: 20px;
+	color: #fff;
+	font-size: 30px;
+	text-align: center;
+	-moz-box-sizing: border-box;
+}
+
+#portfolio .item a {
+  display: inline-block;
+  max-width: 100%;
+  text-decoration: none;
+  background: #fff;
+
+}
+#portfolio .item img {
+  padding: 12px 13px 0px 2px;
+  max-width: 100%;
+}
+.sm-title-testimonial{
+	position: relative;
+	top: -25px;
+}
+
+@media (max-width: 768px){
+	#filter-list li {
+	    margin: 0 auto;
+	    margin-bottom: 10px;
+	    display: table;
+	}
+	#portfolio {
+    padding: 30px 0 !important;
+ 	}
+ 	#portfolio .item{
+ 		margin-right: 0 !important;
+ 	}
+ 	#portfolio .item img {
+    padding: 0 !important;
+	}
 }
